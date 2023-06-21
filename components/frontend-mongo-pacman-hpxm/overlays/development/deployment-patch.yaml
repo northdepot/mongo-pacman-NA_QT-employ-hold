@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend-mongo-pacman-hpxm
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/northdepot/user1-tenant/mongo-pacman/frontend-mongo-pacman-hpxm@sha256:97963147e7a61a57795190c219d62f7d1b3bc0ec7ea8be104f42373fa45a6732
+        name: container-image
+        resources: {}
+status: {}
