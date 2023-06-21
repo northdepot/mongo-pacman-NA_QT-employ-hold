@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: mongo-mongo-pacman-wtom
     spec:
       containers:
-      - image: quay.io/jduimovich0/ mongodb-unused
+      - image: quay.io/northdepot/user1-tenant/mongo-pacman/mongo-mongo-pacman-wtom@sha256:b04c68bdfba9dee94e7d84309bf87e88301a74839d891dfa203d987a280597da
         imagePullPolicy: Always
         name: container-image
         ports:
