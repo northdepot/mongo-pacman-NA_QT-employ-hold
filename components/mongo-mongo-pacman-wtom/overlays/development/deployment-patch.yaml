@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: mongo-mongo-pacman-wtom
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/northdepot/user1-tenant/mongo-pacman/mongo-mongo-pacman-wtom@sha256:b04c68bdfba9dee94e7d84309bf87e88301a74839d891dfa203d987a280597da
+        name: container-image
+        resources: {}
+status: {}
